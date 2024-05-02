@@ -1,0 +1,24 @@
+{
+  "_id" : ObjectId,
+  "storeType" : string (required),
+  "name" : string (required),
+  "location" : {
+    "type" : "Point",
+    "coordinates" : [
+      decimal,
+      decimal
+    ]
+  },
+  "distance" : decimal,
+  "rating" : decimal,
+  "drivingTime" : number (seconds),
+  "deliveryCost" : decimal,
+  "offers" : [
+    {
+      "title" : string,
+      "description" : string,
+      "startDate" : ISODate,
+      "endDate" : ISODate
+    }
+  ]
+}
